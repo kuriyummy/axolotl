@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.navbar-brand .img {
+    width: 100px;
+    height: 100px;
+    background: url("../img/logo.png") center center no-repeat;
+    background-size: contain;
+}
+
+.navbar-nav li {
+    padding-right: 50px;
+}
+
+.nav-link {
+    font-size: 1.1em !important
+}
+
+.carousel-size {
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item-size, .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    background: url("../img/slider1.jpg") top center no-repeat;
+}
+
+.slide2 {
+    background: url("../img/slider2.jpg") top center no-repeat;
+}
+
+.slide3 {
+    background: url("../img/slider3.jpg") top center no-repeat;
+}
+
+.slide1, .slide2, .slide3 {
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+@media (min-width: 1100px) {
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    text-shadow: 1px 1px 1px #000;
+}
+
+@media (max-width: 450px) {
+    .carousel-caption .display-2 {
+        font-size: 3em;
+    }
+}
+
+.jumbotron {
+    padding: 1em;
+    border-radius: 0;
+    width: 70%;
+    margin: 20px auto 0;
+}
+
+.padding {
+    padding-bottom: 2em;
+}
+
+.alert {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.alert hr {
+    border-top: 2px solid lightgray;
+    width: 95%;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.mexicanum {
+    background: url("../img/ambystoma mexicanum.png");
+}
+
+.tigrinum {
+    background: url("../img/ambystoma tigrinum.png");
+}
+
+.andersoni {
+    background: url("../img/ambystoma andersoni.png");
+}
+
+.mexicanum, .tigrinum, .andersoni {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+}
+
+#fixed {
+    height: 400px;
+    background-blend-mode: multiply;
+    background: url("../img/bg.jpg") fixed repeat;
+}
+
+#gifsBtn {
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#gifs img {
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
