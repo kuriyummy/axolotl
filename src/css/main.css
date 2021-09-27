@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
-
 body, html {
     width: 100%;
     height: 100%;
     color: black;
 }
 
+.bg-custom {
+    background-color: #E9ECEF;
+}
+
 .navbar-brand .img {
     width: 100px;
-    height: 100px;
-    background: url("../img/logo.png") center center no-repeat;
+    height: 50px;
+    background: url("../img/logo.png") no-repeat center center;
     background-size: contain;
 }
 
@@ -59,11 +61,10 @@ body, html {
     position: absolute;
     top: 50%;
     transform: translateY(-80%);
-    text-shadow: 1px 1px 1px #000;
 }
 
 @media (max-width: 450px) {
-    .carousel-caption .display-2 {
+    .display-2 {
         font-size: 3em;
     }
 }
@@ -127,4 +128,101 @@ body, html {
     width: 500px;
     max-width: 100%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+    .display-4 {
+        font-size: 1.5em;
+    }
+}
+
+.social a {
+    font-size: 3em;
+    padding: 20px;
+}
+
+.fa-telegram {
+    color: cornflowerblue;
+}
+
+.fa-instagram {
+    color: deeppink;
+}
+
+.fa-vk {
+    color: cornflowerblue;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-telegram:hover, .fa-instagram:hover, .fa-vk:hover, .fa-github:hover {
+    color: silver;
+}
+
+footer {
+    background-color: black;
+    padding-top: 50px;
+    color: white;
+}
+
+/* регистрация и авторизация */
+
+#signIn, #register {
+    background: url("../img/bg.jpg");
+    font-size: 1em;
+    color: #E9ECEF;
+}
+
+#authorizationForm, #registrationForm {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: fit-content;
+}
+
+#authorizationForm {
+    height: 400px;
+}
+
+#registrationForm {
+    height: 450px;
+}
+
+@media (min-width: 500px) {
+    .form-group {
+        width: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    .display-3 {
+        font-size: 1em;
+    }
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #FD8D93 !important;
+    background-color: #FD8D93 !important;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #FD8D93 !important;
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: #E9ECEF !important;
+    border-color: #E9ECEF !important;
+}
+
+#signInBtn, #registerBtn {
+    float: right;
+    outline-color: #FD8D93;
+}
+
+.custom-checkbox, .form-group {
+    color: #FEDFDA;
+}
+
+.fa-eye-slash{
+    color: #FD8D93;
 }
