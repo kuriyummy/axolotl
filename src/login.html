@@ -16,20 +16,20 @@
 <body id="signIn">
 
 <!-- форма авторизации -->
-<form>
-    <a href="index.html" class="btn btn-dark btn-lg m-3 padding">back</a>
+<form class="needs-validation" novalidate>
+    <a href="main.html" class="btn btn-dark btn-lg m-3 padding">back</a>
     <div class="container-fluid padding" id="authorizationForm">
         <h1 class="display-3 text-center">authorization</h1>
         <!-- логин -->
         <div class="form-group m-3">
             <label for="inputEmail">login</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="enter your email or phone number">
+            <input type="email" class="form-control" id="inputEmail" placeholder="enter your email or phone number" required>
         </div>
         <!-- пароль -->
         <div class="form-group m-3">
             <label>password</label>
             <div class="input-group" id="show_hide_password">
-                <input class="form-control" type="password" placeholder="enter your password">
+                <input class="form-control" type="password" placeholder="enter your password" required>
                 <div class="input-group-addon">
                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                 </div>
@@ -41,7 +41,7 @@
             <label class="custom-control-label" for="customCheck">remember me</label>
         </div>
         <!-- вход -->
-        <button type="submit" class="btn-outline-light btn-lg mr-3" id="signInBtn">sign in</button>
+        <a href="cabinet.html" type="submit" class="btn btn-outline-light btn-lg mr-3" id="signInBtn">sign in</a>
     </div>
 </form>
 
