@@ -1,3 +1,5 @@
+import { createClient } from 'pexels';
+
 let a = $("#show_hide_password a");
 let input = $('#show_hide_password input');
 let i = $('#show_hide_password i');
@@ -36,19 +38,23 @@ $(document).ready(function () {
 
 let imagesPost = document.getElementById("imagesPost");
 
-async function fetchAsync() {
-    let response = await fetch(`https://jsonplaceholder.typicode.com/photos`)
-    return await response.json();
+function fetch() {
+    const client = createClient('563492ad6f91700001000001623d28b6e2b2462b938cc0a3cd1ca298');
+    const query = 'Nature';
+    return client.photos.search({query, per_page: 1});
+
+    //let response = await fetch(`https://jsonplaceholder.typicode.com/photos`)
+    //return await response.json();
 }
 
 function loadPost() {
-    fetchAsync()
+    fetch()
         .then((post) => {
             for (let index = 0; index < 10; index++) {
                 imagesPost.innerHTML +=
                     "<div class='bg-dark text-white border border-white card col-3 mx-auto'>" +
-                    "<img class='class-img-top' src='" + post[index].thumbnailUrl + "'>" +
-                    "<p class='card-title'>" + post[index].title + "</p></div>"
+                    "<img class='class-img-top' src='" + post[index].original + "'>" +
+                    "<p class='card-title'>" + post[index].photographer + "</p></div>"
             }
             console.log(imagesPost.innerHTML);
         }).catch((error) => {
