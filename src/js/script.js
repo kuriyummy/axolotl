@@ -26,9 +26,34 @@ eye(a1, input1, i1);
 
 $(document).ready(function () {
     $("#searchInput").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
+        let value = $(this).val().toLowerCase();
         $("#videoTable tr").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
 });
+
+
+let imagesPost = document.getElementById("imagesPost");
+
+async function fetchAsync() {
+    let response = await fetch(`https://jsonplaceholder.typicode.com/photos`)
+    return await response.json();
+}
+
+function loadPost() {
+    fetchAsync()
+        .then((post) => {
+            for (let index = 0; index < 10; index++) {
+                imagesPost.innerHTML +=
+                    "<div class='bg-dark text-white border border-white card col-3 mx-auto'>" +
+                    "<img class='class-img-top' src='" + post[index].thumbnailUrl + "'>" +
+                    "<p class='card-title'>" + post[index].title + "</p></div>"
+            }
+            console.log(imagesPost.innerHTML);
+        }).catch((error) => {
+        console.log("ERROR: " + error);
+    })
+}
+
+loadPost();
