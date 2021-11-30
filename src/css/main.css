@@ -12,6 +12,7 @@ body, html {
 .navbar li a {
 	color: var(--gray) !important;
 }
+
 .navbar li a:hover {
 	color: var(--outline-text-color) !important;
 }
@@ -101,18 +102,6 @@ body, html {
 	width: 95%;
 	margin-top: 0.3em;
 	margin-bottom: 1em;
-}
-
-.mexicanum {
-	background: url("../img/ambystoma mexicanum.png");
-}
-
-.tigrinum {
-	background: url("../img/ambystoma tigrinum.png");
-}
-
-.andersoni {
-	background: url("../img/ambystoma andersoni.png");
 }
 
 .mexicanum, .tigrinum, .andersoni {
@@ -256,7 +245,7 @@ footer {
 	min-height: 60%;
 }
 
-.cards{
+.cards {
 	color: var(--outline-text-color);
 	background-color: var(--back-back-color);
 }
