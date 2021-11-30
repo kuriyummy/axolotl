@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="css/main.css">
 <body>
-    <svg id="ambystoma_andersoni" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <svg id="ambystoma_andersoni" xmlns="http://www.w3.org/2000/svg" x="100px" y="30px"
          width="100" height="100"
          viewBox="0 0 172 172"
          style=" fill:#000000;">
@@ -68,7 +69,7 @@
         </g>
     </svg>
 
-    <svg id="ambystoma_mexicanum" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <svg id="ambystoma_mexicanum" xmlns="http://www.w3.org/2000/svg" x="100px" y="30px"
          width="100" height="100"
          viewBox="0 0 172 172"
          style=" fill:#000000;">
@@ -137,7 +138,7 @@
         </g>
     </svg>
 
-    <svg id="ambystoma_tigrinum" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <svg id="ambystoma_tigrinum" xmlns="http://www.w3.org/2000/svg" x="100px" y="30px"
          width="100" height="100"
          viewBox="0 0 172 172"
          style=" fill:#000000;">
